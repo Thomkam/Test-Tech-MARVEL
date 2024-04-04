@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+article {
+  margin-bottom: 20px;
+  width: 20%; /* Chaque article occupe 20% de la largeur de son conteneur parent */
+}
+
+main {
+  color: white;
+  display: flex; /* Utilise Flexbox pour aligner les articles en ligne */
+  flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'espace est insuffisant */
+  justify-content: space-around; /* Centre les articles horizontalement avec un espacement égal */
+  padding: 20px; /* Ajoute un espacement autour des articles */
+}
+
+h1 {
+  width: 100%;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

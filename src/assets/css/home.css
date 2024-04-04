@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.h1-home-main {
+  /*   font-weight: 900;
+ */
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  background-color: #1d1f25;
+}
+
+.image-home1 {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  background-color: #1d1f25;
+  padding-bottom: 500px;
+  padding-top: 7px;
+}
+
+.home-main {
+  background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/30628374-une-bande-dessinee-livre-couverture-pour-le-merveille-univers-gratuit-photo.jpg");
+}

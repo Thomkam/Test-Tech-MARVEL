@@ -1,0 +1,31 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.container {
+  width: 20%; /* Chaque élément prendra 20% de la largeur de son conteneur */
+  padding: 10px; /* Ajoutez un espace entre les éléments */
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur définie */
+  display: inline-block; /* Affiche chaque article en ligne */
+  vertical-align: top; /* Alignement vertical en haut pour éviter l'alignement bas */
+  color: white;
+}
+
+.container h2 {
+  margin-bottom: 10px; /* Ajoutez un espacement sous le titre */
+}
+
+.container img {
+  width: 100%; /* L'image prendra 100% de la largeur du conteneur */
+  height: auto; /* Laissez la hauteur s'ajuster automatiquement pour éviter la distorsion */
+}
+
+.container p {
+  margin-top: 10px; /* Ajoutez un espacement au-dessus de la description */
+}

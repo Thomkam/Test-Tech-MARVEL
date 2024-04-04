@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  /*   background-image: ; */
+}
+
+header {
+  /* border: solid 3px black; */
+  background-color: #ed1b24;
+  background-image: url("https://static.vecteezy.com/ti/photos-gratuite/p1/30628374-une-bande-dessinee-livre-couverture-pour-le-merveille-univers-gratuit-photo.jpg");
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.btn-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-header a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-comics,
+.btn-characters {
+  color: white;
+  font-size: large;
+  font-weight: 900;
+  width: 500px;
+  height: 50px;
+  background-color: #232226;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.btn-characters {
+  margin-bottom: 0;
+}
