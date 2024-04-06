@@ -11,8 +11,10 @@ import "./assets/css/characters.css";
 
 // Pages
 import Characters from "./pages/Characters";
+import Character from "./pages/Character";
 import Comics from "./pages/Comics";
 import Home from "./pages/Home";
+import Comic from "./pages/Comic";
 
 // Components
 import Header from "./Components/Header";
@@ -26,7 +28,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/comics" element={<Comics />} />
+        <Route path="/comic" element={<Comic />} />
+        <Route path="/comic/:comicId" element={<Comic />} />
         <Route path="/characters" element={<Characters />} />
+        <Route path="/character/:characterId" element={<Character />} />
       </Routes>
     </Router>
   );

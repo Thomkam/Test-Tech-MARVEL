@@ -1,5 +1,5 @@
 /* import { Link } from "react-router-dom";
- */ import homeImg1 from "../Components/img/home_img1.jpg";
+ */ /* import homeImg1 from "../Components/img/home_img1.jpg"; */
 /* import { useState } from "react";
 
 import { TailSpin } from "react-loader-spinner"; */

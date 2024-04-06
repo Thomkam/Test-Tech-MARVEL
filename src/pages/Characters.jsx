@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { TailSpin } from "react-loader-spinner";
 
 const Characters = () => {
@@ -37,12 +38,15 @@ const Characters = () => {
       {charactersData.results.map((character) => {
         return (
           <article key={character._id}>
-            <h2>{character.name}</h2>
-            <img
-              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-              alt={character.name}
-            />
-            <p>{character.description}</p>
+            <Link to={`/character/${character._id}`}>
+              <h2>{character.name}</h2>
+              <img
+                src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+                alt={character.name}
+              />
+              <p>{character.description}</p>
+            </Link>
+            {character.comics.map}
           </article>
         );
       })}

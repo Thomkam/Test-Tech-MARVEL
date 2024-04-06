@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { TailSpin } from "react-loader-spinner";
 import "../assets/css/comics.css";
+import { Link } from "react-router-dom";
 
 const Comics = () => {
   const [comicsData, setComicsData] = useState({});
@@ -36,15 +37,18 @@ const Comics = () => {
     <main>
       <h1>Comics</h1>
       <div className="comics-container">
-        {comicsData.results.map((comics) => {
+        {comicsData.results.map((comic) => {
           return (
-            <article className="container" key={comics._id}>
-              <h2>{comics.name}</h2>
-              <img
-                src={`${comics.thumbnail.path}.${comics.thumbnail.extension}`}
-                alt={comics.title}
-              />
-              <p>{comics.description}</p>
+            <article className="container-comics" key={comic._id}>
+              <Link to={`/comic/${comic._id}`}>
+                <h2 className="comics-title">{comic.title}</h2>
+                <img
+                  className="comics-img"
+                  src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`}
+                  alt={comic.title}
+                />
+                <p className="comics-desc">{comic.description}</p>
+              </Link>
             </article>
           );
         })}
