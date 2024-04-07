@@ -13,14 +13,16 @@ const Comic = () => {
   useEffect(() => {
     const fetchComicData = async () => {
       try {
+        console.log("===============", { comicId });
         const { data } = await axios.get(
           `http://localhost:3000/comic/${comicId}`
         );
-        // console.log(data);
         setComicData(data);
+        console.log("===============>>>>>>>>>>", data);
+        console.log("||||||||||||||||", comicData);
         setIsLoading(false);
       } catch (error) {
-        console.log(error);
+        console.log(error.message);
       }
     };
     fetchComicData();
@@ -40,17 +42,25 @@ const Comic = () => {
     />
   ) : (
     <main>
-      <h1>Comic</h1>
+      <div>
+        <h1>comic</h1>
+        <img src={`${comicData.result}`} alt="" />
+      </div>
+      {/*  <img
+        className="comic-img"
+        src={`${comicData.thumbnail.path}.${comicId.thumbnail.extension}`}
+        alt={comicData.title}
+      /> */}
       {comicData && comicData.comic && (
-        <article key={comicData._id}>
-          <h2>{comicData.name}</h2>
+        <article key={comicData.comic._id}>
+          <h2>{comicData.comic.title}</h2>
           <img
-            src={`${comicData.thumbnail.path}.${comicData.thumbnail.extension}`}
-            alt={comicData.name}
+            src={`${comicData.comic.thumbnail.path}.${comicData.comic.thumbnail.extension}`}
+            alt={comicData.comic.title}
           />
-          <p>{comicData.description}</p>
-          <Link to={`/comic/${comicData.thumbnail.extension}`}>
-            <p>{comicData.character}</p>
+          <p>{comicData.comic.description}</p>
+          <Link to={`/comics/${comicData.comic.thumbnail.extension}`}>
+            <p>{comicData.comic.comics}</p>
           </Link>
         </article>
       )}

@@ -28,7 +28,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/comics" element={<Comics />} />
-        <Route path="/comic" element={<Comic />} />
+        {/*         <Route path="/comic" element={<Comic />} />
+         */}
         <Route path="/comic/:comicId" element={<Comic />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/character/:characterId" element={<Character />} />

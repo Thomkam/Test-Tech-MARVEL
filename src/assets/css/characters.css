@@ -1,18 +1,25 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+Link {
+  text-decoration: none;
+  color: white;
 }
 
 article {
   margin-bottom: 20px;
-  width: 20%; /* Chaque article occupe 20% de la largeur de son conteneur parent */
+  width: 20%;
 }
 
 main {
+  text-decoration: none;
   color: white;
-  display: flex; /* Utilise Flexbox pour aligner les articles en ligne */
-  flex-wrap: wrap; /* Permet aux articles de passer à la ligne lorsque l'espace est insuffisant */
-  justify-content: space-around; /* Centre les articles horizontalement avec un espacement égal */
-  padding: 20px; /* Ajoute un espacement autour des articles */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
 
 h1 {
@@ -23,18 +30,30 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  margin-bottom: 5px;
+  color: white;
+  background-color: rgb(50, 50, 50);
+  border-radius: 7px;
+  width: 200px;
+  margin-left: 85px;
 }
 
 img {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
+  width: 200px;
+  height: 250px;
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
 p {
+  color: white;
   font-size: 1rem;
   line-height: 1.5;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  max-width: 250px;
+  margin-left: 60px;
+  height: 250px;
+  background-color: rgb(50, 50, 50);
+  border-radius: 7px;
 }

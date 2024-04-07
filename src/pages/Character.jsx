@@ -14,7 +14,7 @@ const Character = () => {
     const fetchCharacterData = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:3000/character/${characterId}`
+          `http://localhost:3000/comic/${characterId}`
         );
         // console.log(data);
         setCharacterData(data);

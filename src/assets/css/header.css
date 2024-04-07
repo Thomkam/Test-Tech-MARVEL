@@ -49,3 +49,29 @@ header {
 .btn-characters {
   margin-bottom: 0;
 }
+
+.btn-signin {
+  background-color: #232226;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-login {
+  background-color: #232226;
+  color: white;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+}
